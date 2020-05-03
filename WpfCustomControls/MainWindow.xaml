@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfCustomControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCustomControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--<TabControl Grid.Row="0">
+            <TabItem Header="Header 1">
+                <TextBlock Text="This is tab 1" FontSize="22"></TextBlock>
+            </TabItem>
+            <TabItem Header="Header 2">
+                <TextBlock Text="This is tab 2" FontSize="22"></TextBlock>
+            </TabItem>
+        </TabControl>-->
+
+        <local:ShappedContentControl Template="{StaticResource ResourceKey=ShappedContentControlTemplate}"></local:ShappedContentControl>
+
+    </Grid>
+</Window>
